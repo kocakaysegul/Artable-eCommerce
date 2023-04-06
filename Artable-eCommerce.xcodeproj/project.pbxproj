@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3773F67B513AC9D3B1F01485 /* Pods_Artable_eCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049AA1D5D069DBF626750DDE /* Pods_Artable_eCommerce.framework */; };
 		9AF8DE518733CCB628CB20F4 /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0E0A588D61D92FF344943A /* Pods_ArtableAdmin.framework */; };
+		D848525A29DEE6F8004ACDF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D848525929DEE6F8004ACDF7 /* GoogleService-Info.plist */; };
+		D86153EC29DF082800C9C203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D86153EB29DF082800C9C203 /* GoogleService-Info.plist */; };
 		D89DF7FA29DEA73B00290893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7F929DEA73B00290893 /* AppDelegate.swift */; };
 		D89DF7FC29DEA73B00290893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7FB29DEA73B00290893 /* SceneDelegate.swift */; };
 		D89DF7FE29DEA73B00290893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7FD29DEA73B00290893 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		0A3717D70D483CB4D1B0D7D9 /* Pods-ArtableAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.debug.xcconfig"; path = "Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 		1C0E0A588D61D92FF344943A /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFB715F041B7C8DC3005DFF /* Pods-Artable-eCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable-eCommerce.release.xcconfig"; path = "Target Support Files/Pods-Artable-eCommerce/Pods-Artable-eCommerce.release.xcconfig"; sourceTree = "<group>"; };
+		D848525929DEE6F8004ACDF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D86153EB29DF082800C9C203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D89DF7F629DEA73B00290893 /* Artable-eCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Artable-eCommerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89DF7F929DEA73B00290893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89DF7FB29DEA73B00290893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +90,6 @@
 				0A3717D70D483CB4D1B0D7D9 /* Pods-ArtableAdmin.debug.xcconfig */,
 				E1C06D77A72447FDE721BC67 /* Pods-ArtableAdmin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +123,7 @@
 				D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */,
 				D89DF7FF29DEA73B00290893 /* Main.storyboard */,
 				D89DF80429DEA73B00290893 /* LaunchScreen.storyboard */,
+				D848525929DEE6F8004ACDF7 /* GoogleService-Info.plist */,
 				D89DF80729DEA73B00290893 /* Info.plist */,
 			);
 			path = "Artable-eCommerce";
@@ -133,6 +137,7 @@
 				D89DF81729DEA7E800290893 /* ViewController.swift */,
 				D89DF81929DEA7E800290893 /* Main.storyboard */,
 				D89DF81E29DEA7E900290893 /* LaunchScreen.storyboard */,
+				D86153EB29DF082800C9C203 /* GoogleService-Info.plist */,
 				D89DF82129DEA7E900290893 /* Info.plist */,
 			);
 			path = ArtableAdmin;
@@ -231,6 +236,7 @@
 			files = (
 				D89DF80629DEA73B00290893 /* LaunchScreen.storyboard in Resources */,
 				D89DF80329DEA73B00290893 /* Assets.xcassets in Resources */,
+				D848525A29DEE6F8004ACDF7 /* GoogleService-Info.plist in Resources */,
 				D89DF80129DEA73B00290893 /* Main.storyboard in Resources */,
 				D89DF82829DEC90800290893 /* LoginStoryboard.storyboard in Resources */,
 			);
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89DF82029DEA7E900290893 /* LaunchScreen.storyboard in Resources */,
+				D86153EC29DF082800C9C203 /* GoogleService-Info.plist in Resources */,
 				D89DF82629DEA83F00290893 /* Assets.xcassets in Resources */,
 				D89DF81B29DEA7E800290893 /* Main.storyboard in Resources */,
 			);
@@ -518,6 +525,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,6 +555,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
