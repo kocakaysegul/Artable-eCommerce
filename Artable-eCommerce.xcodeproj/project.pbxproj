@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3773F67B513AC9D3B1F01485 /* Pods_Artable_eCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049AA1D5D069DBF626750DDE /* Pods_Artable_eCommerce.framework */; };
 		9AF8DE518733CCB628CB20F4 /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C0E0A588D61D92FF344943A /* Pods_ArtableAdmin.framework */; };
+		D80B107B29DF1777001E8C11 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80B107A29DF1777001E8C11 /* LoginVC.swift */; };
+		D80B107D29DF1789001E8C11 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80B107C29DF1789001E8C11 /* RegisterVC.swift */; };
 		D848525A29DEE6F8004ACDF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D848525929DEE6F8004ACDF7 /* GoogleService-Info.plist */; };
 		D86153EC29DF082800C9C203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D86153EB29DF082800C9C203 /* GoogleService-Info.plist */; };
 		D89DF7FA29DEA73B00290893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DF7F929DEA73B00290893 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 		0A3717D70D483CB4D1B0D7D9 /* Pods-ArtableAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.debug.xcconfig"; path = "Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 		1C0E0A588D61D92FF344943A /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFB715F041B7C8DC3005DFF /* Pods-Artable-eCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable-eCommerce.release.xcconfig"; path = "Target Support Files/Pods-Artable-eCommerce/Pods-Artable-eCommerce.release.xcconfig"; sourceTree = "<group>"; };
+		D80B107A29DF1777001E8C11 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D80B107C29DF1789001E8C11 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		D848525929DEE6F8004ACDF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D86153EB29DF082800C9C203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D89DF7F629DEA73B00290893 /* Artable-eCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Artable-eCommerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D80B107729DF15EE001E8C11 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */,
+				D89DF80429DEA73B00290893 /* LaunchScreen.storyboard */,
+				D89DF7FF29DEA73B00290893 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D80B107829DF1632001E8C11 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D89DF7F929DEA73B00290893 /* AppDelegate.swift */,
+				D89DF7FB29DEA73B00290893 /* SceneDelegate.swift */,
+				D89DF7FD29DEA73B00290893 /* ViewController.swift */,
+				D80B107A29DF1777001E8C11 /* LoginVC.swift */,
+				D80B107C29DF1789001E8C11 /* RegisterVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D80B107929DF163D001E8C11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D89DF7ED29DEA73B00290893 = {
 			isa = PBXGroup;
 			children = (
@@ -117,12 +150,9 @@
 		D89DF7F829DEA73B00290893 /* Artable-eCommerce */ = {
 			isa = PBXGroup;
 			children = (
-				D89DF7F929DEA73B00290893 /* AppDelegate.swift */,
-				D89DF7FB29DEA73B00290893 /* SceneDelegate.swift */,
-				D89DF7FD29DEA73B00290893 /* ViewController.swift */,
-				D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */,
-				D89DF7FF29DEA73B00290893 /* Main.storyboard */,
-				D89DF80429DEA73B00290893 /* LaunchScreen.storyboard */,
+				D80B107929DF163D001E8C11 /* Views */,
+				D80B107829DF1632001E8C11 /* Controllers */,
+				D80B107729DF15EE001E8C11 /* Storyboard */,
 				D848525929DEE6F8004ACDF7 /* GoogleService-Info.plist */,
 				D89DF80729DEA73B00290893 /* Info.plist */,
 			);
@@ -343,7 +373,9 @@
 			files = (
 				D89DF7FE29DEA73B00290893 /* ViewController.swift in Sources */,
 				D89DF7FA29DEA73B00290893 /* AppDelegate.swift in Sources */,
+				D80B107B29DF1777001E8C11 /* LoginVC.swift in Sources */,
 				D89DF7FC29DEA73B00290893 /* SceneDelegate.swift in Sources */,
+				D80B107D29DF1789001E8C11 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
