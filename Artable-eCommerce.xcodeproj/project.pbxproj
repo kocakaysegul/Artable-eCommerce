@@ -19,6 +19,7 @@
 		D89DF81B29DEA7E800290893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89DF81929DEA7E800290893 /* Main.storyboard */; };
 		D89DF82029DEA7E900290893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89DF81E29DEA7E900290893 /* LaunchScreen.storyboard */; };
 		D89DF82629DEA83F00290893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89DF80229DEA73B00290893 /* Assets.xcassets */; };
+		D89DF82829DEC90800290893 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D89DF81A29DEA7E800290893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D89DF81F29DEA7E900290893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D89DF82129DEA7E900290893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				D89DF7F929DEA73B00290893 /* AppDelegate.swift */,
 				D89DF7FB29DEA73B00290893 /* SceneDelegate.swift */,
 				D89DF7FD29DEA73B00290893 /* ViewController.swift */,
+				D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */,
 				D89DF7FF29DEA73B00290893 /* Main.storyboard */,
 				D89DF80429DEA73B00290893 /* LaunchScreen.storyboard */,
 				D89DF80729DEA73B00290893 /* Info.plist */,
@@ -192,6 +195,7 @@
 				D89DF80629DEA73B00290893 /* LaunchScreen.storyboard in Resources */,
 				D89DF80329DEA73B00290893 /* Assets.xcassets in Resources */,
 				D89DF80129DEA73B00290893 /* Main.storyboard in Resources */,
+				D89DF82829DEC90800290893 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
