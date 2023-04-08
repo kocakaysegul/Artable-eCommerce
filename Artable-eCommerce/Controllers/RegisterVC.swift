@@ -17,29 +17,62 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var confirmPasswordText: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var passCheckImage: UIImageView!
     
+    @IBOutlet weak var confirmPassCheckImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        passwordText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        confirmPasswordText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+    
+    }
+    
+    @objc func textFieldDidChange(_ textField : UITextField) {
+        //print("I got typed in")
+        
+        guard let passText = passwordText.text else { return }
+        
+        //If we have started typimg in he confirm pass text field
+        if textField == confirmPasswordText {
+            passCheckImage.isHidden = false
+            confirmPassCheckImage.isHidden = false
+        } else {
+            if passText.isEmpty {
+                passCheckImage.isHidden = true
+                confirmPassCheckImage.isHidden = true
+                confirmPasswordText.text = ""
+            }
+        }
+        
+        //Make it so when the passwords match, the checköarks turn green
+        if passwordText.text == confirmPasswordText.text {
+            passCheckImage.image = UIImage(named: "green_check")
+            confirmPassCheckImage.image = UIImage(named: "green_check")
+        } else {
+            passCheckImage.image = UIImage(named: "red_check")
+            confirmPassCheckImage.image = UIImage(named: "red_check")
+        }
     }
     
 
     @IBAction func registerClicked(_ sender: Any) {
         
-        guard let email = emailText.text, !email.isEmpty,
-              let username = usernameText.text, !username.isEmpty,
-              let password = passwordText.text, !password.isEmpty else {
-            return
-        }
+        guard let email = emailText.text, email.isNotEmpty,
+              let username = usernameText.text, username.isNotEmpty,
+              let password = passwordText.text, password.isNotEmpty else { return }
+        
+        activityIndicator.startAnimating()
         
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error {
                 debugPrint(error)
                 return
             }
-            print("successfully registered new user")
+            self.activityIndicator.stopAnimating()
+            print("successfully registered new user ")
         }
         
     }

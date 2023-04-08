@@ -227,8 +227,10 @@
                     <navigationItem key="navigationItem" id="MCH-Dn-hby"/>
                     <connections>
                         <outlet property="activityIndicator" destination="ZhI-lE-VFv" id="Af2-xE-7nP"/>
+                        <outlet property="confirmPassCheckImage" destination="pXf-TI-e8X" id="qkA-1E-qkg"/>
                         <outlet property="confirmPasswordText" destination="gx5-yQ-a1B" id="QkY-x5-7F5"/>
                         <outlet property="emailText" destination="Lfq-is-821" id="ZHb-w1-q1P"/>
+                        <outlet property="passCheckImage" destination="dYV-u0-aoe" id="nPc-hV-uUJ"/>
                         <outlet property="passwordText" destination="Gtj-zp-j2i" id="PZe-Cy-gtL"/>
                         <outlet property="usernameText" destination="Nyk-A5-Y8g" id="gic-FE-htt"/>
                     </connections>
