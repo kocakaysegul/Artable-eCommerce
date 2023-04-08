@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="LoginVC" customModule="Artable_eCommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                                             <constraint firstAttribute="height" constant="40" id="a0b-D7-ucV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6po-Xp-vbH">
                                         <rect key="frame" x="0.0" y="138.33333333333331" width="353" height="36.333333333333343"/>
@@ -51,6 +51,9 @@
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="baseForegroundColor" red="0.83529411764705885" green="0.39215686274509803" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgetPasswordClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wLt-w0-G7k"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-BL-ttE" customClass="RoundedButton" customModule="Artable_eCommerce" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="186.66666666666669" width="353" height="40"/>
@@ -63,6 +66,9 @@
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="baseForegroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="o0Z-em-Phk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evw-y6-BXf" customClass="RoundedButton" customModule="Artable_eCommerce" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="238.66666666666669" width="353" height="40"/>
@@ -90,6 +96,9 @@
                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                             <color key="baseForegroundColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="guestClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4FO-qd-Eg1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -113,6 +122,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KyY-vp-ZDJ"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="60N-EE-n6j" id="aV2-AV-mXn"/>
+                        <outlet property="emailText" destination="ziH-dp-A9J" id="A3P-Nl-lkK"/>
+                        <outlet property="passwordText" destination="afE-5H-StQ" id="bVO-Et-Gox"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
