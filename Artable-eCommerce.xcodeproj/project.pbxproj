@@ -28,6 +28,7 @@
 		D89DF82829DEC90800290893 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */; };
 		D8AD7DEE29E15AD400072BD9 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD7DED29E15AD400072BD9 /* Extentions.swift */; };
 		D8AD7DF029E160EB00072BD9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD7DEF29E160EB00072BD9 /* Constants.swift */; };
+		D8AD7DF329E168C400072BD9 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD7DF229E168C400072BD9 /* RoundedViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		D89DF82729DEC90800290893 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		D8AD7DED29E15AD400072BD9 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		D8AD7DEF29E160EB00072BD9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D8AD7DF229E168C400072BD9 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		DCC1EBC80B4E0221F6C01D0C /* Pods-Artable-eCommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable-eCommerce.debug.xcconfig"; path = "Target Support Files/Pods-Artable-eCommerce/Pods-Artable-eCommerce.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C06D77A72447FDE721BC67 /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +182,7 @@
 		D89DF82529DEA81A00290893 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D8AD7DF129E168A500072BD9 /* View */,
 				D8AD7DEC29E15AC200072BD9 /* Utils */,
 				D89DF80229DEA73B00290893 /* Assets.xcassets */,
 			);
@@ -193,6 +196,14 @@
 				D8AD7DEF29E160EB00072BD9 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D8AD7DF129E168A500072BD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD7DF229E168C400072BD9 /* RoundedViews.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				D89DF7FA29DEA73B00290893 /* AppDelegate.swift in Sources */,
 				D8AD7DEE29E15AD400072BD9 /* Extentions.swift in Sources */,
 				D80B107B29DF1777001E8C11 /* LoginVC.swift in Sources */,
+				D8AD7DF329E168C400072BD9 /* RoundedViews.swift in Sources */,
 				D8AD7DF029E160EB00072BD9 /* Constants.swift in Sources */,
 				D89DF7FC29DEA73B00290893 /* SceneDelegate.swift in Sources */,
 				D80B107D29DF1789001E8C11 /* RegisterVC.swift in Sources */,
